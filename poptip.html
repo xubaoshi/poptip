@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="poptip.css">
+    <title>poptip</title>
+    <style>
+        .section {
+            position: relative; 
+            width: 100%;
+            height: 300px;
+        }
+
+        .area  {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="section">
+            <div class="poptip poptip-warn" style="top: 50px">
+                <ul>
+                    <li>poptip-top</li>
+                </ul>
+                <span class="arrow arrow-top">
+                <span class="arrow arrow-in"></span>
+                </span>
+            </div>
+
+            <div class="poptip poptip-warn" style="top: 100px">
+                <ul>
+                    <li>poptip-bottom</li>
+                </ul>
+                <span class="arrow arrow-bottom">
+                <span class="arrow arrow-in"></span>
+                </span>
+            </div>
+
+            <div class="poptip poptip-warn" style="top: 150px">
+                <ul>
+                    <li>poptip-left</li>
+                </ul>
+                <span class="arrow arrow-left">
+                <span class="arrow arrow-in"></span>
+                </span>
+            </div>
+
+            <div class="poptip poptip-warn" style="top: 200px">
+                <ul>
+                    <li>poptip-right</li>
+                </ul>
+                <span class="arrow arrow-right">
+                <span class="arrow arrow-in"></span>
+                </span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="area">
+                <a href="javascript:;" data-tip-target="top">top</a>
+                <div class="poptip poptip-warn js-tip-top" style="top: 50px;display: none;">
+                    <ul>
+                        <li>poptip-top</li>
+                    </ul>
+                    <span class="arrow arrow-top">
+                    <span class="arrow arrow-in"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="area">
+                <a href="javascript:;" data-tip-target="bottom">bottom</a>
+                <div class="poptip poptip-warn js-tip-bottom" style="top: 100px;display: none;">
+                    <ul>
+                        <li>poptip-bottom</li>
+                    </ul>
+                    <span class="arrow arrow-bottom">
+                    <span class="arrow arrow-in"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="area">
+                <a href="javascript:;" data-tip-target="left">left</a>
+                <div class="poptip poptip-warn js-tip-left" style="top: 150px;display: none;">
+                    <ul>
+                        <li>poptip-left</li>
+                    </ul>
+                    <span class="arrow arrow-left">
+                    <span class="arrow arrow-in"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="area">
+                <a href="javascript:;" data-tip-target="right">right</a>
+                <div class="poptip poptip-warn js-tip-right" style="top: 200px;display: none;">
+                    <ul>
+                        <li>poptip-right</li>
+                    </ul>
+                    <span class="arrow arrow-right">
+                    <span class="arrow arrow-in"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="jquery.min.js"></script>
+<script src="poptip.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
